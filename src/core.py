@@ -3,8 +3,5 @@ def process_value(value: int) -> int:
 
 
 def process_batch(values: list[int]) -> list[int]:
-    result: list[int] = []
-    for item in values:
-        result.append(process_value(item))
-    return result
+    return [process_value(item) for item in values]
 
