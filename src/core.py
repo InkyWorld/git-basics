@@ -11,7 +11,7 @@ def process_batch(values: list[int]) -> list[int]:
     log_batch_start(values)
     if not values:
         return []
-    processed = [process_value(item) + 2 for item in values]
+    processed = [process_value(item) + 1 for item in values]
     print("[LOG] process_batch done")
     return processed
 
