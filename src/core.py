@@ -3,8 +3,15 @@ def process_value(value: int) -> int:
     return value * 2
 
 
+def log_batch_start(values: list[int]) -> None:
+    print(f"[LOG] process_batch size={len(values)}")
+
+
 def process_batch(values: list[int]) -> list[int]:
+    log_batch_start(values)
     if not values:
         return []
-    return [process_value(item) + 1 for item in values]
+    processed = [process_value(item) + 1 for item in values]
+    print("[LOG] process_batch done")
+    return processed
 
