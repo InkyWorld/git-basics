@@ -1,4 +1,5 @@
 def process_value(value: int) -> int:
+    print(f"[LOG] process_value input={value}")
     return value * 2
 
 
