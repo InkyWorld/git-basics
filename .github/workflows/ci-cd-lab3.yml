@@ -3,9 +3,11 @@ name: CI-CD Lab 3
 on:
   push:
     branches:
+      - ci-lab3
       - main
-      - feature/**
   pull_request:
+    branches:
+      - ci-lab3
   workflow_dispatch:
     inputs:
       force_verify_fail:
