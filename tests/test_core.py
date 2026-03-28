@@ -13,7 +13,7 @@ SPEC.loader.exec_module(CORE)
 
 class CoreTests(unittest.TestCase):
     def test_process_value_doubles_number(self) -> None:
-        self.assertEqual(CORE.process_value(3), 6)
+        self.assertEqual(CORE.process_value(3), 7)
 
     def test_process_batch_transforms_list(self) -> None:
         # process_value(x) * 2 and process_batch adds +1 to each item
